@@ -57,3 +57,97 @@ html, body {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/*Start of my code*/
+
+@themecolor: red;
+
+.container {
+	width: 876px;
+	margin: 30px;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+header nav a {
+	color: @themecolor;
+	font-style: normal;
+}
+
+.greybox {
+	margin: 10%;
+	padding: 1%;
+	text-align: center;
+	background-color: @themecolor;
+	border-radius: 10px;
+}
+
+.greybox img {
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+h1 {
+	font-size: 2rem;
+	padding-top: 10px;
+}
+
+button {
+	height: 30px;
+	width: 100px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+
+.middle-section {
+	margin: 10%;
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.introduction {
+	width: 30%;
+}
+
+.skills {
+	width: 30%;
+}
+.workhistory {
+	width: 30%;
+}
+
+.skills .list {
+	list-style-type: circle;
+	padding-left: 20px;
+}
+
+.workhistory .list {
+	list-style-type: circle;
+	padding-left: 20px;
+}
+
+footer {
+	margin: 10%;
+	padding: 1%;
+	color: white;
+	text-align: center;
+	background-color: @themecolor;
+	border-radius: 10px;
+}
+
+
+
