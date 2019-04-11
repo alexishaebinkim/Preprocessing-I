@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +54,121 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: @fontp;
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: @fontheaders;
+    letter-spacing: 1.2px;
+	margin-bottom: 15px;
+}
+
+/***Start of my code***/
+
+/*Variables*/
+@themecolor: grey;
+
+@fontheaders: 'Courier New';
+
+@fontp: 'Arial';
+
+
+/*LESS*/
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+header nav {
+	display: flex;
+	justify-content: space-evenly;
+
+	a {
+		color: @themecolor;
+		font-style: normal;
+	}
+}
+
+
+.greybox {
+	margin: 10%;
+	padding: 1%;
+	text-align: center;
+	background-color: @themecolor;
+	border-radius: 10px;
+
+	img {
+		border-radius: 10px;
+		border: 1px solid white;
+	}
+}
+
+.summary {
+	font-size: 0.9rem;
+}
+
+h1 {
+	font-size: 2rem;
+	padding-top: 10px;
+}
+
+button {
+	height: 30px;
+	width: 20%;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+
+.middle-section {
+	width: 100%;
+	max-width: 800px;
+	margin: 10%;
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	.middle-section-content {
+		width: 30%;
+		padding-bottom: 10%;
+		.summary;
+		@media (max-width: 500px){
+			width: 70%;
+			max-width: 500px;
+			margin-left: -10%;
+			margin-right: 10%;
+			marin-bottom: 10%;
+
+		}
+	}
+	@media (max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}
+
+.list {
+	list-style-type: circle;
+	padding-left: 15%;
+}
+
+footer {
+	margin: 10%;
+	padding: 1%;
+	color: white;
+	text-align: center;
+	background-color: @themecolor;
+	border-radius: 10px;
+	.summary;
+}
+ 
